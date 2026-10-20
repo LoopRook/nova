@@ -1,18 +1,18 @@
 {
     "id": "nova",
-    "homepage": "https://github.com/qumeqa/nova",
+    "homepage": "https://github.com/LoopRook/nova",
     "author": "qumeqa",
     "name": "Nova UI",
     "description": "A Zen theme enhancement that refines spacing, padding, and visual consistency across the interface",
-    "version": "2.2",
+    "version": "2.3",
     "createdAt": "2026-01-30",
-    "updatedAt": "2026-02-19",
+    "updatedAt": "2026-10-20",
     "style": {
         "chrome": "userChrome.css"
     },
     "preferences": "preferences.json",
-    "readme": "https://raw.githubusercontent.com/qumeqa/nova/refs/heads/main/README.md",
-    "image": "https://raw.githubusercontent.com/qumeqa/nova/refs/heads/main/img/cover.jpg",
+    "readme": "https://raw.githubusercontent.com/LoopRook/nova/refs/heads/main/README.md",
+    "image": "https://raw.githubusercontent.com/LoopRook/nova/refs/heads/main/img/cover.jpg",
     "tags": [
         "modern",
         "ui",

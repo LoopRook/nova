@@ -2,7 +2,17 @@
 
 A styling enhancement for the Zen browser theme. Nova improves the visual consistency of the Zen theme by adjusting spacing, padding, borders, and overall layout
 
-![Nova UI Theme](https://raw.githubusercontent.com/qumeqa/nova/refs/heads/main/img/main.jpg)
+> **Fork note (v2.3):** this is a maintained fork of [qumeqa/nova](https://github.com/qumeqa/nova), which is archived. It was checked against Zen 1.23 (Firefox 158).
+>
+> **What was fixed:** the "Remove shadow from tabs" option no longer removed the selected tab's shadow.
+>
+> **Why:** Firefox renamed the variable Nova cleared, `--tab-selected-shadow`, to `--tab-box-shadow-selected`. Zen also now sets it on each `zen-workspace`, below the `#tabbrowser-tabs` element that Nova targeted. The option now clears the new variable on both elements, and still clears the old one for older Zen builds.
+>
+> **Also:** removed a leftover `@import` of `modules/tabs.css`, a file merged into `other.css` long ago, which only caused a failed load. Every other selector, setting and Zen variable Nova uses was checked and still works.
+>
+> Install in Sine from `https://github.com/LoopRook/nova`. If you have the original installed, remove it first.
+
+![Nova UI Theme](https://raw.githubusercontent.com/LoopRook/nova/refs/heads/main/img/main.jpg)
 
 > [!NOTE]
 > Screenshot with "New Icons" mod
@@ -11,7 +21,7 @@ A styling enhancement for the Zen browser theme. Nova improves the visual consis
 
 Nova UI is a mod that refines the Zesn theme. It standardizes spacing, adjusts padding for UI elements, and improves the visual consistency of popups, tabs, menus, and panels. The mod maintains the Zen theme's original functionality while providing a more unified visual presentation
 
-![Settings](https://raw.githubusercontent.com/qumeqa/nova/refs/heads/main/img/other.jpg)
+![Settings](https://raw.githubusercontent.com/LoopRook/nova/refs/heads/main/img/other.jpg)
 
 ## 🔮 What It Changes
 
@@ -29,13 +39,13 @@ Nova UI is a mod that refines the Zesn theme. It standardizes spacing, adjusts p
 - **Quietify Integration** — Add a calm visualizer type of animation to mute button to use with style and ease
 - **Custom Font** — Replaces the interface font with any font you want
 
-![Settings](https://raw.githubusercontent.com/qumeqa/nova/refs/heads/main/img/settings.png)
+![Settings](https://raw.githubusercontent.com/LoopRook/nova/refs/heads/main/img/settings.png)
 
 ## 🎯 Recommended Mods
 
 For the best experience, use Nova UI together with:
 
-- **"New Icons"** — Modern icon set that perfectly complements Nova
+- **"New Icons"** — Modern icon set that perfectly complements Nova ([fixed fork for Zen 1.23+](https://github.com/LoopRook/zen-icons))
 - **"Floating Findbar"** — Floating find-in-page search bar
 
 ## 🚀 Future Plans

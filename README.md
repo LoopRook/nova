@@ -2,9 +2,13 @@
 
 A styling enhancement for the Zen browser theme. Nova improves the visual consistency of the Zen theme by adjusting spacing, padding, borders, and overall layout
 
-> **Fork note (v2.3):** this is a maintained fork of [qumeqa/nova](https://github.com/qumeqa/nova), which is archived. It was checked against Zen 1.23 (Firefox 158).
+> **Fork note (v2.4):** this is a maintained fork of [qumeqa/nova](https://github.com/qumeqa/nova), which is archived. It was checked against Zen 1.23 and 1.24.
 >
-> **What was fixed:** the "Remove shadow from tabs" option no longer removed the selected tab's shadow.
+> **Find bar (v2.4):** Ctrl+F seemed to do nothing. The find bar did open, but 20px below the bottom of the page, out of sight.
+>
+> **Why:** newer Firefox lays out the page area as a CSS grid, with the find bar in its own row at the bottom. Nova positions the find bar `absolute` with `top: 20px`, and an absolutely positioned grid item is measured from its own grid row. That row starts at the bottom edge of the page, so the bar landed below it. Nova now places the find bar in the page's `browserstack` grid area, so it floats at the top as intended.
+>
+> **Tab shadow (v2.3):** the "Remove shadow from tabs" option no longer removed the selected tab's shadow.
 >
 > **Why:** Firefox renamed the variable Nova cleared, `--tab-selected-shadow`, to `--tab-box-shadow-selected`. Zen also now sets it on each `zen-workspace`, below the `#tabbrowser-tabs` element that Nova targeted. The option now clears the new variable on both elements, and still clears the old one for older Zen builds.
 >

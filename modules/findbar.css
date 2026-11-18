@@ -3,6 +3,9 @@
 }
 
 findbar {
+    /* .browserContainer is a grid in newer Firefox; without this the absolute
+       findbar is positioned from the bottom "findbar" row and lands off-screen */
+    grid-area: browserstack !important;
     position: absolute !important;
     top: 20px !important;
     left: 50% !important;
